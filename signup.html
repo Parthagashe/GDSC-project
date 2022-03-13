@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Signup</span>
+
+                <form  id="form">
+                    <div class="input-field">
+                        <input  type="text" placeholder="Enter your Name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input id="email"  type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" id="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <button type="submit">Signup Now</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already user?
+                        <a href="./login.html" class="text signup-link">login now</a>
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script  src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+    <script  src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script>
+        const config = {
+            apiKey: "AIzaSyAz6Cc3aBTD-5uXCIMsmXo7Z9trTjhSAk4",
+          authDomain: "amzonclone-36565.firebaseapp.com",
+          projectId: "amzonclone-36565",
+          storageBucket: "amzonclone-36565.appspot.com",
+          messagingSenderId: "449670051451",
+          appId: "1:449670051451:web:c7a0fd7d549d4d8d9214de"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./signup.js"></script>
+</body>
+</html>
